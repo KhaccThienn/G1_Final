@@ -1,0 +1,18 @@
+<div class="container-fluid p-5" ng-controller="filterController">
+  <div ng-repeat="items in categorys">
+    <span ng-if="items.id == uid">
+      <div class="header text-center h2">ALL PRODUCT OF: {{items.name}}</div>
+      <div class="row justify-content-between align-items-center">
+        <div class="col-lg-3 mt-5" ng-repeat="item in products" ng-if="item.cate_id == items.id">
+          <div class="card" style="width: 16rem;">
+            <img class="card-img-top" src="{{item.image}}" alt="Card image cap">
+            <div class="card-body pro-text">
+              <p class="card-text text-truncate">{{item.name}}</p>
+              <p class="price">{{item.price / 22300 | number:3}}$</p>
+              <a href="#!detail/{{item.id}}" class="btn btn-primary">Buy Now</a>
+            </div>
+          </div>
+        </div>
+    </span>
+  </div>
+</div>

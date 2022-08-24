@@ -1,0 +1,215 @@
+<div class="container-fluid p-0 bg-full">
+  <div id="carouselExampleIndicators" class=" font carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="banner">
+          <img class="d-block w-100" src="https://dieuhoamitsubishi.vn/uploaded/slideshow/slide-khuyenmailon.jpg"
+            alt="First slide">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="banner">
+          <img class="d-block w-100" src="https://dieuhoamitsubishi.vn/uploaded/slideshow/slide-kxz.jpg"
+            alt="Second slide">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="banner">
+          <img class="d-block w-100" src="https://dieuhoamitsubishi.vn/uploaded/slideshow/slide-multi.jpg"
+            alt="Third slide">
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <div class="bos-service">
+    <div class="d-flex">
+      <div class="col-lg col-md d-flex boder-service">
+        <div class="img">
+          <img src="https://eleco.exdomain.net/image/cache/catalog/icon/icon01-48x48.png" alt="">
+        </div>
+        <div class="service">
+          <h5 class="m-0 font-weight-bold">FAST DELIVERY IN 2 HOURS</h5>
+          <p>Free Nationwide Shipping</p>
+        </div>
+      </div>
+      <div class="col-lg col-md d-flex boder-service">
+        <div class="img">
+          <img src="https://eleco.exdomain.net/image/cache/catalog/icon/icon02-48x48.png" alt="">
+        </div>
+        <div class="service">
+          <h5 class="m-0 font-weight-bold">FAST DELIVERY IN 2 HOURS</h5>
+          <p>Free Nationwide Shipping</p>
+        </div>
+      </div>
+      <div class="col-lg col-md d-flex boder-service">
+        <div class="img">
+          <img src="	https://eleco.exdomain.net/image/cache/catalog/icon/icon03-48x48.png" alt="">
+        </div>
+        <div class="service">
+          <h5 class="m-0 font-weight-bold">FAST DELIVERY IN 2 HOURS</h5>
+          <p>Free Nationwide Shipping</p>
+        </div>
+      </div>
+      <div class="col-lg col-md d-flex boder-service">
+        <div class="img">
+          <img src="https://eleco.exdomain.net/image/cache/catalog/icon/icon04-48x48.png" alt="">
+        </div>
+        <div class="service">
+          <h5 class="m-0 font-weight-bold">FAST DELIVERY IN 2 HOURS</h5>
+          <p>Free Nationwide Shipping</p>
+        </div>
+      </div>
+      <div class="col-lg col-md d-flex">
+        <div class="img">
+          <img src="	https://eleco.exdomain.net/image/cache/catalog/icon/icon05-48x48.png" alt="">
+        </div>
+        <div class="service">
+          <h5 class="m-0 font-weight-bold">FAST DELIVERY IN 2 HOURS</h5>
+          <p>Free Nationwide Shipping</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hot-sale">
+    <div class="sale-img">
+      <img src="https://eleco.exdomain.net/image/cache/catalog/banner/HotSale-0x0.png" alt="" class="card-img">
+    </div>
+    <div class="sale-text">
+      <h3>HOT SALE</h3>
+    </div>
+  </div>
+
+  <div class="product">
+
+    <div class="col-lg p-0" ng-repeat="item in products" ng-if="item.id &lt; 6">
+      <div class="card" style="width: 16rem;">
+        <img class="card-img-top" src="{{item.image}}" alt="Card image cap">
+        <div class="card-body pro-text">
+          <p class="card-text text-truncate">{{item.name}}</p>
+          <p class="price">{{item.price / 22300 | number:3}}$</p>
+          <a href="#!detail/{{item.id}}" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="hot-sale">
+    <div class="sale-img">
+      <img src="https://eleco.exdomain.net/image/cache/catalog/banner/HotSale-0x0.png" alt="" class="card-img">
+    </div>
+    <div class="sale-text">
+      <h3>BRAND PAGES</h3>
+    </div>
+  </div>
+  <div class="brand">
+    <div class="d-flex">
+      <div class="col-lg-2 ">
+        <img src="https://eleco.exdomain.net/image/cache/catalog/brand/logo_brand06-260x203.png" alt="">
+      </div>
+      <div class="col-lg-2 ">
+        <img src="https://eleco.exdomain.net/image/cache/catalog/brand/logo_brand05-260x203.png" alt="">
+      </div>
+      <div class="col-lg-2 ">
+        <img src="https://eleco.exdomain.net/image/cache/catalog/brand/logo_brand03-260x203.png" alt="">
+      </div>
+      <div class="col-lg-2 ">
+        <img src="https://eleco.exdomain.net/image/cache/catalog/brand/logo_brand09-260x203.png" alt="">
+      </div>
+      <div class="col-lg-2 ">
+        <img src="https://eleco.exdomain.net/image/cache/catalog/brand/logo_brand11-260x203.png" alt="">
+      </div>
+      <div class="col-lg-2 ">
+        <img src="https://eleco.exdomain.net/image/cache/catalog/brand/logo_brand12-260x203.png" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="hot-sale">
+    <div class="sale-img">
+      <img src="https://eleco.exdomain.net/image/cache/catalog/banner/HotSale-0x0.png" alt="" class="card-img">
+    </div>
+    <div class="sale-text">
+      <h3>CASPER</h3>
+    </div>
+  </div>
+
+  <div class="product">
+
+    <div class="col-lg p-0" ng-repeat="item in products" ng-if="item.manuId == 1">
+      <div class="card" style="width: 16rem;">
+        <img class="card-img-top" src="{{item.image}}" alt="Card image cap">
+        <div class="card-body pro-text">
+          <p class="card-text text-truncate">{{item.name}}</p>
+          <p class="price">{{item.price / 22300 | number:3}}$</p>
+          <a href="#!detail/{{item.id}}" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="hot-sale">
+    <div class="sale-img">
+      <img src="https://eleco.exdomain.net/image/cache/catalog/banner/HotSale-0x0.png" alt="" class="card-img">
+    </div>
+    <div class="sale-text">
+      <h3>DAIKIN</h3>
+    </div>
+  </div>
+
+  <div class="product">
+
+    <div class="col-lg p-0" ng-repeat="item in products" ng-if="item.manuId == 2">
+      <div class="card" style="width: 16rem;">
+        <img class="card-img-top" src="{{item.image}}" alt="Card image cap">
+        <div class="card-body pro-text">
+          <p class="card-text text-truncate">{{item.name}}</p>
+          <p class="price">{{item.price / 22300 | number:3}}$</p>
+          <a href="#!detail/{{item.id}}" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="hot-sale">
+    <div class="sale-img">
+      <img src="https://eleco.exdomain.net/image/cache/catalog/banner/HotSale-0x0.png" alt="" class="card-img">
+    </div>
+    <div class="sale-text">
+      <h3>MISUBISHI</h3>
+    </div>
+  </div>
+
+  <div class="product">
+
+    <div class="col-lg p-0" ng-repeat="item in products" ng-if="item.manuId == 3">
+      <div class="card" style="width: 16rem;">
+        <img class="card-img-top" src="{{item.image}}" alt="Card image cap">
+        <div class="card-body pro-text">
+          <p class="card-text text-truncate">{{item.name}}</p>
+          <p class="price">{{item.price / 22300 | number:3}}$</p>
+          <a href="#!detail/{{item.id}}" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>

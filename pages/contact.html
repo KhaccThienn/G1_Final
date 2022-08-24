@@ -1,0 +1,39 @@
+<div class="p-5 container" ng-controller="contactCtrl">
+  <div class="header text-center">
+    <div class="h2">Contact</div>
+  </div>
+  <div class="main mt-5">
+    <div class="row align-items-center justify-content-between">
+      <div class="col-lg-6">
+        <form name="myForm" ng-submit="submit(name, email, subject, mess)">
+          <div class="form-group">
+            <label for="Name" class="font-weight-bold">Your Name ?</label>
+            <input type="text" name="" id="Name" class="form-control-cus" placeholder="Name..." ng-model="name" aria-describedby="helpId">
+          </div>
+          <div class="form-group">
+            <label for="Mail" class="font-weight-bold">Your Email</label>
+            <input class="form-control-cus" id="to" name="To" ng-required="true" ng-pattern="emails.EMAIL_FORMAT"
+              placeholder="{{emails.EMAIL_FORMAT_HELP}}" ng-model="email" />
+            <small class="text-danger" ng-show="myForm.To.$error.pattern">Invalid Email</small>
+            
+          </div>
+          <div class="form-group">
+            <label for="sub" class="font-weight-bold">Subject ?</label>
+            <input type="text" name="" id="sub" class="form-control-cus" placeholder="Subject..." ng-model="subject" aria-describedby="helpId">
+          </div>
+          <div class="form-group">
+            <label for="mess" class="font-weight-bold">Message ?</label>
+            <textarea type="text" name="" id="mess" class="form-control-cus" placeholder="Message..." ng-model="mess" aria-describedby="helpId"></textarea>
+          </div>
+          <button type="submit" name="" id="" class="btn btn-primary-cus btn-block">Submit</button>
+        </form>
+      </div>
+      <div class="col-lg-6">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d245.73045099862895!2d105.7818917177682!3d21.246114575886427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3134fd4caa422443%3A0x7dcde71952636700!2zU2nDqnUgdGjhu4sgTmfhu41jIHRv4bqjbg!5e1!3m2!1svi!2s!4v1661138996725!5m2!1svi!2s"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</div>

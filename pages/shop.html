@@ -1,0 +1,70 @@
+<div class="full-shop p-5">
+  <div class="row">
+    <div class="cate col-lg-3 py-3">
+      <h3 class="mt-5 mb-4">PRODUCT CATEGORIES</h3>
+
+      <div class="pl-2">
+        <div class="cate-but" ng-repeat="item in manufacturals">
+          <button type="button" ng-click="manuFiltering(item.id)">{{item.name}}</button>
+        </div>
+      </div>
+      <section class="filter-section pt-0">
+        <h3>Price</h3>
+        <form method="get" name="price-filters">
+          <div class="price-slider">
+            <div id="price-range" ya-no-ui-slider="price_slider"></div>
+            <div class="values group mb-2">
+              <!--data-min-val represent minimal price and data-max-val maximum price respectively in pricing slider range; value="" - default values-->
+              <span class="labels">Min Price: </span>
+              <input class="form-control" name="minVal" id="minVal" type="text" ng-model="price_slider.start[0]">
+              <span class="labels">Max Price: </span>
+              <input class="form-control" name="maxVal" id="maxVal" type="text" ng-model="price_slider.start[1]">
+            </div>
+            <span ng-click="price_slider.start = [0, 90000000]" class="clear btn btn-primary-cus"
+              id="clearPrice">Clear</span>
+            <input class="btn btn-primary-cus" type="submit" ng-click="priceFiltering()" value="Filter">
+          </div>
+        </form>
+      </section>
+
+      <section class="filter-section pt-0">
+        <h3>Tonnage: </h3>
+        <form method="get" name="ton-filters">
+          <div class="price-slider">
+            <div id="price-range" ya-no-ui-slider="ton_slider"></div>
+            <div class="values group mb-2">
+              <!--data-min-val represent minimal price and data-max-val maximum price respectively in pricing slider range; value="" - default values-->
+              <span class="labels">Min Tonnage: </span>
+              <input class="form-control" name="minVal" id="minVals" type="text" ng-model="ton_slider.start[0]">
+              <span class="labels">Max Tonnage: </span>
+              <input class="form-control" name="maxVal" id="maxVals" type="text" ng-model="ton_slider.start[1]">
+            </div>
+            <span ng-click="ton_slider.start = [9000, 50000]" class="clear btn btn-primary-cus"
+              id="clearTon">Clear</span>
+            <input class="btn btn-primary-cus" type="submit" ng-click="tonFiltering()" value="Filter">
+          </div>
+        </form>
+      </section>
+    </div>
+
+    <div class="col-lg-9 p-0">
+      <div class="row">
+        <div class="col-lg-4 mt-5 p-0"
+          ng-repeat="item in products | filter:pricefilter | filter:tonfilter | filter:profilter | filter:clearfilter | orderBy:propertyName:reverse">
+          <div class="card" style="width: 16rem;">
+            <img class="card-img-top" src="{{item.image}}" alt="Card image cap">
+            <div class="card-body pro-text">
+              <p class="card-text text-truncate">{{item.name}}</p>
+              <p class="price">{{item.price / 22300 | number:3}}$</p>
+              <p class="price">{{item.price}} vnd</p>
+              <a href="#!detail/{{item.id}}" class="btn btn-primary">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+</div>

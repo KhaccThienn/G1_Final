@@ -1,0 +1,524 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.bg-header {
+  background-color: #8cc63f !important;
+}
+.fa-search{
+  font-size: 14px !important;
+}
+.login{
+  font-size: 20px !important;
+}
+.logo {
+  width: 30% !important;
+}
+
+.banner {
+  position: relative;
+
+}
+
+.text-banner {
+  position: absolute;
+  top: 30%;
+  right: 37%;
+  color: white;
+  text-align: center;
+
+}
+
+.text-banner p {
+  font-size: 15px;
+}
+
+.text-banner h2 {
+  font-size: 40px;
+}
+
+.text-banner a {
+  background: rgb(255, 255, 255);
+  border: rgb(255, 255, 255) 0px solid;
+  border-radius: 50px;
+  padding: 16px 45px;
+  margin-top: 50px;
+  text-decoration: none !important;
+  color: rgb(119, 119, 119);
+}
+
+.text-banner a:hover {
+  background: rgb(246, 91, 35);
+  color: white;
+  transition: 0.7s;
+}
+
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+section {
+  padding: 60px 0;
+}
+
+section .section-title {
+  text-align: center;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+#footer {
+  background: #EFF5EE !important;
+}
+
+#footer h5 {
+  padding-left: 10px;
+  border-left: 3px solid #eeeeee;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+}
+
+#footer a {
+  color: black !important;
+  text-decoration: none !important;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+#footer ul.social li {
+  padding: 3px 0;
+}
+
+#footer ul.social li a i {
+  margin-right: 5px;
+  font-size: 20px;
+  -webkit-transition: .5s all ease;
+  -moz-transition: .5s all ease;
+  transition: .5s all ease;
+}
+
+#footer ul.social li:hover a i {
+  font-size: 25px;
+  margin-top: -10px;
+}
+
+#footer ul.quick-links li {
+  padding: 3px 0;
+  -webkit-transition: .5s all ease;
+  -moz-transition: .5s all ease;
+  transition: .5s all ease;
+}
+
+#footer ul.quick-links li:hover {
+  padding: 3px 0;
+  margin-left: 5px;
+  font-weight: 700;
+}
+
+#footer ul.quick-links li a i {
+  margin-right: 5px;
+}
+
+#footer ul.quick-links li:hover a i {
+  font-weight: 700;
+}
+
+@media (max-width:767px) {
+  #footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+  }
+}
+.icon{
+  cursor: pointer !important;
+}
+
+.bg-full {
+  background: #e9eaeb !important;
+}
+
+.bos-service {
+  width: 90%;
+  background: #ffffff;
+  margin: 25px auto;
+  padding: 15px 10px !important;
+}
+
+.service h5 {
+  font-size: 13px;
+  padding-top: 9px;
+}
+
+.service p {
+  font-size: 13px;
+}
+
+.boder-service {
+  border-right: rgb(252, 248, 248) 1px solid;
+}
+
+.hot-sale {
+  width: 90%;
+  margin: 20px auto;
+
+}
+
+.sale-img {
+  position: absolute;
+  width: 90%;
+
+}
+
+.sale-img img {
+  height: 54px !important;
+}
+
+.sale-text {
+  position: relative;
+  text-align: center;
+  padding-top: 8px;
+
+}
+
+.sale-text h3 {
+  color: white;
+}
+
+.product {
+  width: 90%;
+  background: #e9eaeb;
+  margin: 25px auto;
+  display: flex;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.pro-text p {
+  font-size: 13px;
+
+}
+
+.pro-text p:hover {
+  color: #8cc63f;
+
+}
+
+.pro-text a {
+  width: 100%;
+  background: #8cc63f;
+  color: white;
+  border: #8cc63f 1px solid;
+}
+
+.pro-text a:hover {
+  background: white;
+  color: #8cc63f;
+  border: #8cc63f 1px solid;
+}
+
+.price {
+  font-size: 15px !important;
+}
+
+.trademark {
+  text-align: center;
+
+}
+
+.brand {
+  width: 90% !important;
+  margin: 30px auto;
+}
+
+.brand img {
+  width: 100%;
+  border: #e9eaeb 1px solid;
+}
+
+/* css-tópelling */
+.full-shop {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.shop {
+  margin: 15px 0px;
+  position: absolute;
+  top: 33%;
+  left: 39%;
+}
+
+.shop a {
+  color: rgb(33, 33, 33);
+  text-decoration: none;
+  padding-right: 8px;
+}
+
+.shop a:hover {
+  color: #ff7800;
+}
+
+.cate h3 {
+  font-size: 20px;
+  font-weight: 600
+}
+
+.cate-but button {
+  background: none;
+  width: 100%;
+  text-align: left;
+  border: none;
+  border-bottom: #f5f5f5 1px solid;
+  padding-bottom: 14px;
+  margin-bottom: 14px !important;
+  transition: 0.3s ease-in !important;
+}
+
+.cate-but button:hover {
+  color: #8cc63f;
+}
+
+.ton {
+  width: 100px !important;
+  padding: 3px !important;
+  border-radius: 0px;
+
+}
+
+.sort button {
+  color: black;
+  background: white;
+  border: white 1px solid;
+}
+
+.sort a {
+  color: black;
+}
+.text-banner {
+  position: absolute;
+  top: 30%;
+  right: 37%;
+  color: white;
+  text-align: center;
+
+}
+
+.text-banner p {
+  font-size: 18px;
+}
+
+.text-banner h2 {
+  font-size: 60px;
+}
+
+.text-banner a {
+  background: rgb(255, 255, 255);
+  border: rgb(255, 255, 255) 0px solid;
+  border-radius: 50px;
+  padding: 16px 45px;
+  margin-top: 50px;
+  text-decoration: none !important;
+  color: rgb(119, 119, 119);
+}
+
+.text-banner a:hover {
+  background: rgb(246, 91, 35);
+  color: white;
+  transition: 0.7s;
+}
+
+.bg-menu {
+  background: #2b6b39;
+}
+
+.menu {
+  margin: 0 175px 0 185px;
+
+}
+
+.menu-icon a {
+  color: #f9f9f9;
+  padding: 15px;
+
+
+}
+
+.menu-icon a:hover {
+  color: #8cc63f !important;
+  text-decoration: none !important;
+}
+
+.img {
+  padding-right: 10px;
+}
+.form-control-cus {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + .75rem + 2px);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #2b6b39;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out
+}
+.form-control-cus:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #8cc63f;
+  outline: 0;
+  box-shadow: 0 0 0 .2rem #8cc63f;
+}
+.btn-primary-cus {
+  color: #fff;
+  background-color: #8cc63f;
+  border-color: #8cc63f
+}
+
+.btn-primary-cus:hover {
+  color: #fff;
+  background-color: #8cc63f;
+  border-color: #8cc63f
+}
+.btn-primary-cus.focus,
+.btn-primary-cus:focus {
+  box-shadow: 0 0 0 .2rem #2b6b39
+}
+.login_header{
+  padding: 10px !important;
+  background-image: url("https://eleco.exdomain.net/image/cache/catalog/banner/HotSale-0x0.png") !important;
+  background-clip: padding-box;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* faq css */
+.faq-section {
+  background: #fdfdfd;
+  min-height: 100vh;
+  padding: 10vh 0 0;
+}
+
+.faq-title h2 {
+  position: relative;
+  margin-bottom: 45px;
+  display: inline-block;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.faq-title h2::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 60px;
+  height: 2px;
+  background: #8cc63f;
+  bottom: -25px;
+  margin-left: -30px;
+}
+
+.faq-title p {
+  padding: 0 190px;
+  margin-bottom: 10px;
+}
+
+.faq {
+  background: #FFFFFF;
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+}
+
+.faq .card {
+  border: none;
+  background: none;
+  border-bottom: 1px dashed #CEE1F8;
+}
+
+.faq .card .card-header {
+  padding: 0px;
+  border: none;
+  background: none;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.faq .card .card-header:hover {
+  background: #8cc63f40;
+  padding-left: 10px;
+}
+
+.faq .card .card-header .faq-title {
+  width: 100%;
+  text-align: left;
+  padding: 0px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: #3B566E;
+  text-decoration: none !important;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.faq .card .card-header .faq-title .badge {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 14px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  text-align: center;
+  background: #8cc63f;
+  color: #fff;
+  font-size: 12px;
+  margin-right: 20px;
+}
+
+.faq .card .card-body {
+  padding: 30px;
+  padding-left: 35px;
+  padding-bottom: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #6F8BA4;
+  line-height: 28px;
+  letter-spacing: 1px;
+  border-top: 1px solid #F3F8FF;
+}
+
+.faq .card .card-body p {
+  margin-bottom: 14px;
+}
+
+@media (max-width: 991px) {
+  .faq {
+    margin-bottom: 30px;
+  }
+
+  .faq .card .card-header .faq-title {
+    line-height: 26px;
+    margin-top: 10px;
+  }
+}
+.py-3{
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
