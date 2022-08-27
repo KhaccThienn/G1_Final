@@ -1,4 +1,3 @@
-
 var app = angular.module("myApp", ["ngRoute"]);
 
 app.controller("appCtrl", function ($scope, $http, $location, $interval) {
@@ -67,6 +66,7 @@ app.controller("appCtrl", function ($scope, $http, $location, $interval) {
   $scope.ton_slider = {
     start: [9000, 50000],
   };
+
   $scope.tonFiltering = function () {
     $scope.minTon = $scope.ton_slider.start[0];
     $scope.maxTon = $scope.ton_slider.start[1];
@@ -136,14 +136,13 @@ app.controller(
   }
 );
 
-
 // Filter Services
 app.controller(
   "filterController",
   function ($scope, $routeParams, $location, $http) {
     $scope.uid = $routeParams.id;
     console.log($scope.uid);
-  
+
     $http
       .get("data.json")
       .then((response) => {
@@ -168,14 +167,17 @@ app.controller(
     $scope.submit = function (name, email, subject, mess) {
       $scope.contacts = JSON.parse(localStorage.getItem("contact") || "[]");
       $scope.data = {
-        name, email, subject, mess
+        name,
+        email,
+        subject,
+        mess,
       };
       if (!name || !email || !subject) {
-        alert('Name, Email and Subject must be provided')
+        alert("Name, Email and Subject must be provided");
       } else {
         $scope.contacts.push($scope.data);
         localStorage.setItem("contact", JSON.stringify($scope.contacts));
-        alert("Thanks for contacting")
+        alert("Thanks for contacting");
         console.log($scope.contacts);
         $location.path("/");
       }
@@ -192,7 +194,8 @@ app.controller(
     };
     console.log($scope.isMatch);
     $scope.emails = {
-      EMAIL_FORMAT: /^\w+([\.-]?\w+)*@(list.)?gmail.com+((\s*)+,(\s*)+\w+([\.-]?\w+)*@(list.)?gmail.com)*$/,
+      EMAIL_FORMAT:
+        /^\w+([\.-]?\w+)*@(list.)?gmail.com+((\s*)+,(\s*)+\w+([\.-]?\w+)*@(list.)?gmail.com)*$/,
       EMAIL_FORMAT_HELP: "Email... Ex: example@example.com",
     };
 
@@ -204,7 +207,13 @@ app.controller(
         pass,
         PASS,
       };
-      if (!name || !email || !pass || !PASS || angular.equals($scope.pass, $scope.PASS) == false) {
+      if (
+        !name ||
+        !email ||
+        !pass ||
+        !PASS ||
+        angular.equals($scope.pass, $scope.PASS) == false
+      ) {
         alert("Name, Email and Password must be provided");
       } else {
         $scope.users.push($scope.data);
@@ -220,11 +229,11 @@ app.controller(
 // Login Services
 app.controller("loginController", function ($scope, $location) {
   $scope.lgs = JSON.parse(localStorage.getItem("user") || "[]");
-  
+
   $scope.login = function (name, pass) {
     $scope.lgs.map((item) => {
       $scope.lg = item;
-    })
+    });
     if (
       $scope.lg.name !== name ||
       $scope.lg.pass !== pass ||
@@ -236,7 +245,7 @@ app.controller("loginController", function ($scope, $location) {
       $location.path("/");
       alert("Login Successfully");
     }
-  }
+  };
 });
 
 // Carts Services
@@ -259,8 +268,7 @@ app.controller(
     $scope.email = {
       EMAIL_FORMAT:
         /^\w+([\.-]?\w+)*@(list.)?gmail.com+((\s*)+,(\s*)+\w+([\.-]?\w+)*@(list.)?gmail.com)*$/,
-      EMAIL_FORMAT_HELP:
-        "Email... Ex: example@example.com"
+      EMAIL_FORMAT_HELP: "Email... Ex: example@example.com",
     };
   }
 );

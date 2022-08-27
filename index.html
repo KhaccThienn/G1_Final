@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
-  <link rel="icon" href="">
+  <link rel="icon" href="Assets/pngegg.png">
   <link rel="stylesheet" href="plugins/bs4/css/bootstrap.min.css">
   <!-- Font Awesome CSS -->
   <link rel="stylesheet" href="plugins/bs4/css/fontawesome.min.css">
@@ -32,8 +32,17 @@
   <!-- Views component, includes by ng-view -->
   <div ng-view></div>
   <!-- Footer component, includes by ng-include -->
-  <div ng-include="'footer.html'"></div>  
-  
+  <div ng-include="'footer.html'"></div>
+
+  <a href="#" class="btn btn-lg btn-primary back-to-top"><i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i></a>
+
+  <div class="showtime text-right fixed-bottom" ng-controller="appCtrl as mainController">
+    <div class="d-inline bg-success text-light p-2" style="border-radius: 10px;">
+      {{mainController.date | date:"HH:mm:ss" }},
+      {{mainController.date | date:"EEEE dd/MM/yyyy" }},
+      GMT: {{mainController.date | date:"Z" }}
+    </div>
+  </div>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then OwlCarousel2.js , then Popper.js, then Bootstrap JS -->
   <script src="plugins/bs4/js/jquery.min.js"></script>
@@ -43,6 +52,7 @@
   <script src="plugins/bs4/js/bootstrap.min.js"></script>
   <script src="plugins/bs4/js/420a189669.js"></script>
   <script src="plugins/bs4/js/bootstrap520.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
