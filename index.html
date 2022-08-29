@@ -36,8 +36,8 @@
 
   <a href="#" class="btn btn-lg btn-primary back-to-top"><i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i></a>
 
-  <div class="showtime text-right fixed-bottom" ng-controller="appCtrl as mainController">
-    <div class="d-inline bg-success text-light p-2" style="border-radius: 10px;">
+  <div class="text-right fixed-bottom" ng-controller="appCtrl as mainController">
+    <div class="d-inline showtime text-light p-2" style="border-radius: 10px;">
       {{mainController.date | date:"HH:mm:ss" }},
       {{mainController.date | date:"EEEE dd/MM/yyyy" }},
       GMT: {{mainController.date | date:"Z" }}

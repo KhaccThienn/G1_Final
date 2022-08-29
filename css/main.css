@@ -38,6 +38,11 @@
 
 }
 
+.showtime{
+  font-size: 18px !important;
+  background-color: #8cc63f !important;
+}
+
 .text-banner {
   position: absolute;
   top: 30%;
