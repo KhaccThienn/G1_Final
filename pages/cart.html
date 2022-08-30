@@ -23,7 +23,9 @@
             {{item.cart.item.name}}
           </a>
         </td>
-        <td>{{item.cart.rated}} <i class="fa fa-star" aria-hidden="true"></i></td>
+        <td>
+          {{item.cart.rated ? item.cart.rated  :  0 }} <i class="fa fa-star" aria-hidden="true"></i>
+        </td>
         <td>{{item.cart.item.price}} <sup>vnd</sup></td>
         <td>{{item.cart.qty}}</td>
         <td>{{item.cart.item.price * item.cart.qty}} <sup>vnd</sup></td>
@@ -32,7 +34,10 @@
         </td>
 
       </tr>
-
+      <tr class="text-center">
+        <td colspan="5">Total: </td>
+        <td colspan="2">{{total}} vnd</td>
+      </tr>
     </tbody>
   </table>
 </div>

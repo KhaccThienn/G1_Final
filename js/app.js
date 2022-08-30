@@ -11,7 +11,7 @@ app.controller("appCtrl", function ($scope, $http, $location, $interval) {
     { number: 2 },
     { number: 3 },
     { number: 4 },
-    { number: 5 },
+    { number: 5 }
   ];
   // Getting data from JSON file, using $http service
   $http
@@ -259,6 +259,11 @@ app.controller("cartCtrl", function ($scope) {
     localStorage.setItem("cart", JSON.stringify($scope.carts));
     console.log($scope.find);
   };
+
+  $scope.total = 0;
+  $scope.carts.forEach((items) => {
+    $scope.total += (items.cart.item.price * items.cart.qty);
+  })
 });
 
 // Test
